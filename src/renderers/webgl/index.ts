@@ -810,7 +810,7 @@ export default class WebGLRenderer extends Renderer {
         {
           key: labelsToDisplay[i],
           label: data.label,
-          color: "#000",
+          color: this.settings.defaultLabelColor,
           size,
           x,
           y,

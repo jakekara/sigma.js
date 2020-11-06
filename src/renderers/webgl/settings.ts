@@ -43,6 +43,7 @@ export interface WebGLSettings {
   renderLabels: boolean;
   renderEdgeLabels: boolean;
   // Component rendering
+  defaultLabelColor: string;
   defaultNodeColor: string;
   defaultNodeType: string;
   defaultEdgeColor: string;
@@ -55,7 +56,7 @@ export interface WebGLSettings {
   edgeLabelWeight: string;
   // Labels
   labelGrid: {
-    cell: {width: number, height: number} | null;
+    cell: { width: number, height: number } | null;
     renderedSizeThreshold: number;
   };
   // Reducers
@@ -81,6 +82,7 @@ export const WEBGL_RENDERER_DEFAULT_SETTINGS: WebGLSettings = {
   renderEdgeLabels: false,
 
   // Component rendering
+  defaultLabelColor: "#000",
   defaultNodeColor: "#999",
   defaultNodeType: "circle",
   defaultEdgeColor: "#ccc",
